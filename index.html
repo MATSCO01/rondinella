@@ -124,12 +124,71 @@
             transform: scale(1.07);
             box-shadow: 0 0 20px rgba(255,255,255,0.6);
         }
-        @media (max-width: 480px) {
-            .container h1 {
-                font-size: 1.3rem;
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+                gap: 14px;
             }
-            .instagram-row a {
-                font-size: 0.85rem;
+            .container img {
+                max-width: 80vw;
+                max-height: 45vh;
+            }
+            .container h1 {
+                margin-top: 48px;
+                font-size: 1.8rem;
+                letter-spacing: 3px;
+            }
+            .social-section {
+                margin-top: 40px;
+                gap: 20px;
+            }
+            .social-section .intanto-text {
+                font-size: 1rem;
+            }
+            .social-row {
+                gap: 16px;
+            }
+            .social-row .ig-badge,
+            .social-row .fb-badge {
+                font-size: 1rem;
+                padding: 9px 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                gap: 12px;
+            }
+            .container img {
+                max-width: 80vw;
+                max-height: 40vh;
+            }
+            .container h1 {
+                margin-top: 32px;
+                font-size: 1.4rem;
+                letter-spacing: 2px;
+            }
+            .social-section {
+                margin-top: 32px;
+                gap: 16px;
+            }
+            .social-section .intanto-text {
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+            .social-row {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .social-row .ig-badge,
+            .social-row .fb-badge {
+                font-size: 0.9rem;
+                padding: 8px 18px;
+                width: 180px;
+                justify-content: center;
+            }
+            .social-row span {
+                display: none;
             }
         }
     </style>
@@ -144,7 +203,6 @@
             <a href="https://www.instagram.com/rondinella_shoes/?hl=it" class="ig-badge" target="_blank" rel="noopener noreferrer" aria-label="Instagram Rondinella Shoes">
                 INSTAGRAM
             </a>
-            <span style="font-size:1.1rem; font-weight:300; color:#fff; letter-spacing:2px; text-transform:uppercase;">O</span>
             <a href="https://www.facebook.com/RondinellaOfficial/?locale=it_IT" class="fb-badge" target="_blank" rel="noopener noreferrer" aria-label="Facebook Rondinella Official">
                 FACEBOOK
             </a>
